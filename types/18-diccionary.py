@@ -19,3 +19,9 @@ punto["x"] = 25
 
 for valor in punto:
     print(valor, punto[valor])
+
+for valor in punto.items():
+    print(valor)
+
+for llave, valor in punto.items():
+    print(llave, valor)

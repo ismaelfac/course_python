@@ -8,8 +8,9 @@ class Model():
     def save(self):
         print(f"Guardando {self.table}")
 
-    def find_by_id(self, id):
-        print(f"Buscando por id {_id}")
+    @classmethod
+    def find_by_id(self, _id):
+        print(f"Buscando por id {_id} en la tabla {self.table}")
     
 
 class User(Model):
@@ -18,3 +19,4 @@ class User(Model):
 user = User()
 
 user.save()
+user.find_by_id(123)

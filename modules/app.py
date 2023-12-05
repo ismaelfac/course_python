@@ -1,5 +1,8 @@
-from user import save, paid_taxes
+from users.actions.utils import pagar_impuestos
 
-save()
+def iniciar_pagos():
+    print("Pagando impuestos")
+    pagar_impuestos()
 
-paid_taxes()
+
+iniciar_pagos()
